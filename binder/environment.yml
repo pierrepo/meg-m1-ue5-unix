@@ -1,5 +1,10 @@
-name: plasmabio-template-bash
+name: meg-m1-ue5-unix2
+# channels priority
+# see https://bioconda.github.io/
+# conda-forge has highest prioriy
 channels:
+  - defaults
+  - bioconda
   - conda-forge
 dependencies:
   - jupyterlab=2
@@ -7,5 +12,10 @@ dependencies:
   - python>=3.7
   - pip
   - nodejs
+  - fastqc
+  - fastp
+  - hisat2    
+  - samtools
+  - trimmomatic
   - pip:
     - bash_kernel
