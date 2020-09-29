@@ -14,8 +14,8 @@ dependencies:
   - nodejs
   - fastqc
   - fastp
-  - hisat2    
-  - samtools
-  - trimmomatic
+  - hisat2==2.1.0
+  - samtools==1.9
+  - trimmomatic==0.39
   - pip:
     - bash_kernel
