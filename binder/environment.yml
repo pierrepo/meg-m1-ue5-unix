@@ -17,5 +17,6 @@ dependencies:
   - hisat2    
   - samtools
   - trimmomatic
+  - star
   - pip:
     - bash_kernel
