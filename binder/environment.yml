@@ -1,23 +1,32 @@
-name: meg-m1-ue5-unix2
+name: meg-m1-ue5-unix
 # channels priority
 # see https://bioconda.github.io/
-# conda-forge has highest prioriy
+# conda-forge has highest priority
 channels:
   - defaults
   - bioconda
   - conda-forge
 dependencies:
-  - python>=3.8
-  - jupyterlab>=3
-  - pip
-  - nbresuse
+  # Jupyter dependencies
+  - jupyterhub>=1.5,<2
+  - jupyterlab>=3.2,<4
+  - jupyter-resource-usage
+  - jupyterlab-topbar
+  - jupyterlab-topbar-text
+  - jupyterlab-system-monitor
   - nodejs
+  # Jupyter archive
+  # https://github.com/jupyterlab-contrib/jupyter-archive
+  - jupyter-archive
+  # RNA-seq tools
   - fastqc
   - fastp
   - hisat2    
   - samtools
   - trimmomatic
-  - fastp
   - star
+  # Bash environment
+  - python>=3.8
+  - pip
   - pip:
     - bash_kernel
