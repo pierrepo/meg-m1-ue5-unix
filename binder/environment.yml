@@ -17,7 +17,7 @@ dependencies:
   - nodejs
   # Jupyter archive
   # https://github.com/jupyterlab-contrib/jupyter-archive
-  - jupyter-archive
+  - jupyter-archive=3.3.4
   # RNA-seq tools
   - fastqc
   - fastp
